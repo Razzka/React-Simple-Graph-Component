@@ -1,0 +1,55 @@
+body {
+	background-color: #F6F7F8;
+}
+
+.text {
+	font-size: 12px;
+	font-family: Verdana;
+}
+.AxisHorizontalLine {
+	stroke-width: 1;
+	stroke: #E5E7E9;
+}
+.currency  {
+	fill: black;
+}
+.red {
+	fill: red;
+}
+
+.green {
+	fill: green;
+}
+.floatingDiv {
+	fill: white;
+	rx: 5;
+	ry: 5;
+}
+.custom-cursor {
+	cursor: pointer;
+}
+
+.transparent {
+	fill: rgba(0,0,0,0);
+}
+
+.chartLine {
+	strokeWidth: 3;
+	stroke: #74A3C7;
+	fill: none;
+} 
+.dashed-line {
+	stroke-width: 1;
+	stroke: #D5D8D9;
+	stroke-dasharray: 5;
+}
+
+.graph-dot {
+	r:5;
+	fill: #74A3C7;
+	stroke: #F6F7F8;
+	stroke-width: 3;
+}
+.gray {
+	fill: #949BA4;
+}

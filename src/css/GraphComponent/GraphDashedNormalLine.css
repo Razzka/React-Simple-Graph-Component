@@ -1,0 +1,5 @@
+.dashed-line {
+	stroke-width: 1;
+	stroke: #D5D8D9;
+	stroke-dasharray: 5;
+}
