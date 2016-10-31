@@ -25,7 +25,7 @@ class Hover extends React.PureComponent {
           y2={this.props.height - 10}
         />
 
-        <GraphDot cx={this.props.value.currentPoint.x} cy={this.props.value.currentPoint.y} />
+        <GraphDot r={5} cx={this.props.value.currentPoint.x} cy={this.props.value.currentPoint.y} />
       </g>
     );
   }

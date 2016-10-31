@@ -22,8 +22,6 @@ body {
 }
 .floatingDiv {
 	fill: white;
-	rx: 5;
-	ry: 5;
 }
 .custom-cursor {
 	cursor: pointer;
@@ -45,7 +43,6 @@ body {
 }
 
 .graph-dot {
-	r:5;
 	fill: #74A3C7;
 	stroke: #F6F7F8;
 	stroke-width: 3;

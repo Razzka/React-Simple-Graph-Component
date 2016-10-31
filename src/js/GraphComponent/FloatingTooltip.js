@@ -31,8 +31,8 @@ class FloatingTooltip extends React.PureComponent {
     return (
       <g>
         <defs>
-          <filter id="drop-shadow" x="0" y="0" width="110%" height="110%">
-            <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+          <filter id="drop-shadow" x="-5%" y="-5%" width="110%" height="110%">
+            <feOffset result="offOut" in="SourceAlpha" dx="0" dy="0.5" />
             <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
             <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
           </filter>
@@ -43,6 +43,8 @@ class FloatingTooltip extends React.PureComponent {
           height={divHeight}
           x={x}
           y={y}
+          rx={5}
+          ry={5}
           filter="url(#drop-shadow)"
         />
         <CurrencyText x={x + 10} y={y + 35}>{currentValue}</CurrencyText>

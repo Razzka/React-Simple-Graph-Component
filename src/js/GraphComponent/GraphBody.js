@@ -56,7 +56,7 @@ class GraphBody extends React.PureComponent {
   }
 
   handleMouseMove(event) {
-    const x = event.nativeEvent.offsetX;
+    const x = event.nativeEvent.layerX;
     const idx = Math.round((x - this.props.offsetX) / this.state.dx);
     const currentPoint = this.state.points[idx];
     let previousPoint = currentPoint;

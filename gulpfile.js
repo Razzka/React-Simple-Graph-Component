@@ -6,7 +6,7 @@ var eslint      = require('gulp-eslint');
 gulp.task('build', ['hello', 'styles'], function() {
 return gulp.src('src/js/GraphComponent/*.js')
     .pipe(babel({
-        "presets": ["react"]
+        "presets": ["react", "es2015"]
     }))
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('build'));
@@ -15,7 +15,7 @@ return gulp.src('src/js/GraphComponent/*.js')
 gulp.task('hello', function() {
 return gulp.src('src/js/hello.js')
     .pipe(babel({
-        "presets": ["react"]
+        "presets": ["react", "es2015"]
     }))
     .pipe(gulp.dest('build'));
 });
